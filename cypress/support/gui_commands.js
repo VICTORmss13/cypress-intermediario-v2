@@ -12,11 +12,11 @@ Cypress.Commands.add('login', (
     }
 
     const options = {
-        cacheAcressoSpecs: true,
+        cacheAcrossSpecs: true,
     }
 
     if (cacheSession) {
-        cypress.session(user, login, options)
+        cy.session(user, login, options)
     } else {
         login()
     }
