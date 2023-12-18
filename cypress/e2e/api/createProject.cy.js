@@ -11,7 +11,7 @@ describe('Create Project', () => {
       .then(response => {
         expect(response.status).to.equal(201)
         expect(response.body.name).to.equal(project.name)
-        expect(response.bodydescription).to.equal(project.description)
+        expect(response.body.description).to.equal(project.description)
       })
     })
   })
